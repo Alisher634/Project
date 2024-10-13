@@ -1,0 +1,134 @@
+@import url('main.css');
+
+.education {
+    margin-top: 20px;
+}
+
+.education h1, .education h2 {
+    margin-bottom: 20px;
+}
+
+.education-timeline {
+    margin-bottom: 20px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.timeline-item {
+    background-color: rgba(200, 255, 200, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.education-milestones table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.education-milestones th, .education-milestones td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.education-milestones th {
+    background-color: #f2f2f2;
+}
+
+.key-achievements {
+    margin: 40px 0;
+}
+
+.key-achievements table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.key-achievements th, .key-achievements td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.key-achievements th {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+}
+
+.key-achievements td {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+.language-skills {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    background-color: rgba(200, 240, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-basis: 30%;
+    flex-grow: 1;
+}
+
+.skill-item h3 {
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .skill-item {
+        flex-basis: 100%; 
+        max-width: 400px; 
+    }
+
+    .key-achievements table, 
+    .education-milestones table {
+        max-width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .education h1, .education h2 {
+        font-size: 1.5rem; 
+    }
+
+    .skill-item p {
+        font-size: 1em; 
+    }
+}

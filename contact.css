@@ -1,0 +1,138 @@
+@import url('main.css');
+
+header h1 {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #004d40;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #00352f;
+}
+
+.social-media {
+    margin: 30px auto;
+}
+
+.social-media h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.icons a img:hover {
+    transform: scale(1.1);
+}
+
+.map {
+    margin: 30px auto;
+}
+
+.map h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.map img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.map img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        margin: 10px;
+    }
+
+    .social-media {
+        margin: 20px;
+    }
+
+    .map {
+        margin: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .social-media h2,
+    .map h2 {
+        font-size: 1.5rem;
+    }
+
+    .map img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form h2,
+    .social-media h2,
+    .map h2 {
+        font-size: 1.2rem;
+    }
+}
